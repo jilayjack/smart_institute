@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 04, 2018 at 10:08 AM
+-- Generation Time: Mar 04, 2018 at 12:21 PM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.2.0
 
@@ -92,12 +92,13 @@ CREATE TABLE `course_tbl` (
 --
 
 INSERT INTO `course_tbl` (`course_id`, `course_title`, `course_desc`, `course_duration`, `course_fees`, `course_img`) VALUES
-(-1, '', '', 0, 0, ''),
-(1, 'mca', 'it subject', 5, 9000, ''),
-(2, 'krisha', 'sddcdc', 4, 2000, ''),
-(3, 'ba', 'arts subject', 5, 300, ''),
-(4, 'mscitt', 'it course', 5, 9000, ''),
-(5, 'jdjsdj', 'jdjdj', 21, 212, 'kk');
+(-1, '', '', 0, 0, '/images/courseimg/courseimgE6zYF281166.png'),
+(1, 'mca', 'it subject', 5, 9000, '/images/courseimg/courseimgE6zYF281166.png'),
+(2, 'krisha', 'sddcdc', 4, 2000, '/images/courseimg/courseimgE6zYF281166.png'),
+(3, 'ba', 'arts subject', 5, 300, '/images/courseimg/courseimgE6zYF281166.png'),
+(4, 'mscitt', 'it course', 5, 9000, '/images/courseimg/courseimgE6zYF281166.png'),
+(5, 'jdjsdj', 'jdjdj', 21, 212, '/images/courseimg/courseimgE6zYF281166.png'),
+(6, 'course', 'aaaa', 0, 1000, '/images/courseimg/courseimgE6zYF281166.png');
 
 -- --------------------------------------------------------
 
@@ -122,10 +123,12 @@ CREATE TABLE `event_tbl` (
 --
 
 INSERT INTO `event_tbl` (`event_id`, `event_title`, `event_desc`, `event_location`, `event_img`, `event_date`, `event_time`, `seminar_video`, `fk_course_id`) VALUES
-(2, 'garba', 'jdkk', 'jfjfjfj', 'hii', '2017-12-06', '', 'hii', '2'),
-(16, 'pgf', 'dg', 'dfg', 'gfg', '2018-01-31', '', 'fgv', '3'),
-(22, 'd', 'dsfs', 'dsfs', 'dfs', '2018-01-04', '', 'ds', '-1'),
-(25, 'a', 'a', 'a', '/images/eventimg/eventimgo9s7b31800.png', '2018-02-25', '22:22', 'q', '2');
+(2, 'garba', 'jdkk', 'jfjfjfj', '/images/eventimg/eventimgcas1p42456.png', '2017-12-06', '', '/images/eventimg/eventimgnbBhm111562.png', '2'),
+(16, 'pgf', 'dg', 'dfg', '/images/eventimg/eventimgcas1p42456.png', '2018-01-31', '', 'fgv', '3'),
+(25, 'a', 'a', 'a', '/images/eventimg/eventimgcas1p42456.png', '2018-02-25', '22:22', 'q', '2'),
+(28, 'demo', 'demo', 'demo', '/images/eventimg/eventimgcas1p42456.png', '2018-02-01', '22:22', '', '-1'),
+(31, 'tp', 'tp', 'tp', '/images/eventimg/eventimgcas1p42456.png', '2018-03-02', '12:02', '', '-1'),
+(32, 'a', 'a', 'a', '/images/eventimg/eventimgcas1p42456.png', '2018-03-03', '11:11', '', '-1');
 
 -- --------------------------------------------------------
 
@@ -151,8 +154,9 @@ CREATE TABLE `faculty_tbl` (
 --
 
 INSERT INTO `faculty_tbl` (`faculty_id`, `f_email_id`, `f_pass`, `faculty_name`, `f_address`, `f_m_no`, `f_qalification`, `f_experience`, `f_join_date`, `f_img`) VALUES
-(1, 'faculty@gamil.com', '', 'faculty', 'admedabad', '123242', 'phd', '20', '3-12-10', 'assets/images/avatar/2.jpg'),
-(4, 'krishu', 'bb', 'kri', 'dfcd', '11', 'dfdf', 'df', '2018-01-03', 'fdf');
+(1, 'faculty@gamil.com', '', 'faculty', 'admedabad', '123242', 'phd', '20', '3-12-10', '/images/facultyimg/facultyimg1T6tL281402.png'),
+(4, 'krishu', 'bb', 'kri', 'dfcd', '11', 'dfdf', 'df', '2018-01-03', '/images/facultyimg/facultyimg1T6tL281402.png'),
+(5, 'facultyabc@gamil.com', 'facultyabc', 'facultyabc', 'address', '123456789', 'enginer', '10', '2018-02-16', '/images/facultyimg/facultyimg1T6tL281402.png');
 
 -- --------------------------------------------------------
 
@@ -175,8 +179,7 @@ CREATE TABLE `feedback_tbl` (
 INSERT INTO `feedback_tbl` (`feedback_id`, `feedback_title`, `feedback_desc`, `date`, `fk_student_id`) VALUES
 (1, 'sad', 'sdfsd', '2017-12-04', 1),
 (2, 'insitute', 'this insitute has suppotive faculty', '2018-01-09', 1),
-(4, 'jsjs', 'jjsj', '2018-01-03', 22),
-(5, 'jjjjjjj', 'jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj', '2018-01-09', 22);
+(4, 'jsjs', 'jjsj', '2018-01-03', 22);
 
 -- --------------------------------------------------------
 
@@ -195,10 +198,11 @@ CREATE TABLE `gallary_tbl` (
 --
 
 INSERT INTO `gallary_tbl` (`pic_id`, `pic_title`, `pic_img`) VALUES
-(1, 'jjjjjj', 'assets\\images\\awardsPenguins.jpg'),
-(7, '11', '11'),
-(8, 'hii', 'ds'),
-(11, 'hello', 'vcb');
+(1, 'jjjjjj', '/images/picimg/picimgx7aLY281956.png'),
+(7, '11', '/images/picimg/picimgx7aLY281956.png'),
+(8, 'hii', '/images/picimg/picimgx7aLY281956.png'),
+(11, 'hello', '/images/picimg/picimgx7aLY281956.png'),
+(12, 'gellary', '/images/picimg/picimgx7aLY281956.png');
 
 -- --------------------------------------------------------
 
@@ -231,8 +235,9 @@ CREATE TABLE `news_tbl` (
 --
 
 INSERT INTO `news_tbl` (`news_id`, `news_title`, `new_desc`, `news_img`) VALUES
-(1, 'institude news', 'dfdf', '111'),
-(3, 'jkjkj', 'kjkjkjkj', 'jkjkjkj');
+(1, 'institude news', 'dfdf', '/images/newsimg/newsimgVoBFO101147.png'),
+(3, 'jkjkj', 'kjkjkjkj', '/images/newsimg/newsimgVoBFO101147.png'),
+(4, 'demo', 'sd', '/images/newsimg/newsimgVoBFO101147.png');
 
 -- --------------------------------------------------------
 
@@ -304,7 +309,7 @@ CREATE TABLE `report_tbl` (
 
 INSERT INTO `report_tbl` (`report_id`, `report_title`, `report_desc`, `date`, `fk_faculty_id`) VALUES
 (1, 'sde', 'ede', '2017-12-04', 1),
-(5, 'sdsa', 'sdas', '2018-01-02', 2);
+(5, 'sdsa', 'sdas', '2018-01-02', 4);
 
 -- --------------------------------------------------------
 
@@ -335,9 +340,9 @@ CREATE TABLE `stu_tbl` (
 --
 
 INSERT INTO `stu_tbl` (`stu_id`, `stu_email_id`, `pass`, `f_name`, `m_name`, `l_name`, `gen`, `addhar_no`, `address`, `m_no`, `qualification`, `img`, `dob`, `flag`, `fk_course_id`) VALUES
-(1, 'krishu', 'krisha', 'hiii', 'j', 'j', 'j', '3', 'kjkjkjk', 1234567891, '10', 'assets/images/avatar/3.jpg', '2017-12-08', '0', 4),
+(1, 'krishu', 'krisha', 'hiii', 'j', 'j', 'j', '3', 'kjkjkjk', 1234567891, '10', '/images/stuimg/stuimgQeQvR21805.png', '2017-12-08', '0', 4),
 (2, 'krisha', 'krisha', 'krisha', 'a', 'a', 'j', '3', 'kjkjkjk', 1234567891, '10', '/images/stuimguiN2Z300867.png', '2017-12-07', '0', 4),
-(22, 'jilayshah007@gmail.com', 'jilay', 'jilauy', 'jj', 'jj', 'jj', '123', 'ssss', 21233, 'ss', 'assets/images/avatar/3.jpg', '2018-01-18', '1', 2),
+(22, 'jilayshah007@gmail.com', 'jilay', 'jilauy', 'jj', 'jj', 'jj', '123', 'ssss', 21233, 'ss', '/images/stuimg/stuimgQeQvR21805.png', '2018-01-18', '1', 2),
 (24, 'ringwala', 'ringwala', 'ringwala', 'ringwala', 'ringwala', 'Female', '11', 'ringwala', 111, '12', '/images/stuimg/stuimgjHo3V300727.png', '2018-01-21', '0', 2),
 (26, 'tmp', 'tmp', 'tmp', 'tmp', 'tmp', 'Female', '11', 'tmp', 11, 'tmp', '/images/stuimg/stuimgQeQvR21805.png', '2018-02-17', '0', 4);
 
@@ -360,8 +365,8 @@ CREATE TABLE `subject_tbl` (
 --
 
 INSERT INTO `subject_tbl` (`sub_id`, `sub_title`, `sub_desc`, `fk_faculty_id`, `fk_cousre_id`) VALUES
-(1, 'ba', 'arts subject', 1, 2),
-(4, 'java', 'asas111', 1, 2);
+(4, 'java', 'asas111', 1, 4),
+(6, 'demo', 'sdfsfd', 1, 1);
 
 --
 -- Indexes for dumped tables
@@ -459,37 +464,37 @@ ALTER TABLE `ans_tbl`
 -- AUTO_INCREMENT for table `course_tbl`
 --
 ALTER TABLE `course_tbl`
-  MODIFY `course_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `course_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `event_tbl`
 --
 ALTER TABLE `event_tbl`
-  MODIFY `event_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `event_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT for table `faculty_tbl`
 --
 ALTER TABLE `faculty_tbl`
-  MODIFY `faculty_id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `faculty_id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `feedback_tbl`
 --
 ALTER TABLE `feedback_tbl`
-  MODIFY `feedback_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `feedback_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `gallary_tbl`
 --
 ALTER TABLE `gallary_tbl`
-  MODIFY `pic_id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `pic_id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `news_tbl`
 --
 ALTER TABLE `news_tbl`
-  MODIFY `news_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `news_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `notes_tbl`
@@ -519,7 +524,7 @@ ALTER TABLE `stu_tbl`
 -- AUTO_INCREMENT for table `subject_tbl`
 --
 ALTER TABLE `subject_tbl`
-  MODIFY `sub_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `sub_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
